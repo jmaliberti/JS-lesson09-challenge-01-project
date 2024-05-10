@@ -12,5 +12,5 @@ const guestCount = document.querySelector(".attendance");
 const guestFull = document.querySelector(".alert");
 
 addGuestButton.addEventListener("click", function () {
-    const guest = guestInput.ariaValueMax;
+    const guest = guestInput.value;
 });
