@@ -14,14 +14,18 @@ const guestFull = document.querySelector(".alert");
 addGuestButton.addEventListener("click", function () {
     const guest = guestInput.value;
     if (guest !== "") {
-        let listItem = document.createElement("li");
-        listItem.innerText = guest;
-        guestList.append(listItem);
-        return clearInput();
+    addToList(guest);
+    clearInput();
     }
 });
 //console.log(guest);
 
 const clearInput = function () {
     guestInput.value = "";
+};
+
+const addToList = function (guest) {
+    const listItem = document.createElement("li");
+    listItem.innerText = guest;
+    guestList.append(listItem);
 };
