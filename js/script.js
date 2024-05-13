@@ -29,3 +29,9 @@ const addToList = function (guest) {
     listItem.innerText = guest;
     guestList.append(listItem);
 };
+
+const updateGuestCount = function () {
+    let guests = document.querySelectorAll(".guest-list li");
+    guestCount.innerText = guests.length;
+    
+};
