@@ -16,6 +16,7 @@ addGuestButton.addEventListener("click", function () {
     if (guest !== "") {
     addToList(guest);
     clearInput();
+    updateGuestCount();
     }
 });
 //console.log(guest);
@@ -33,5 +34,5 @@ const addToList = function (guest) {
 const updateGuestCount = function () {
     let guests = document.querySelectorAll(".guest-list li");
     guestCount.innerText = guests.length;
-    
+
 };
